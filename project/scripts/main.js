@@ -5,9 +5,9 @@ const currentDate = new Date();
 document.querySelector('#year').textContent = currentDate.getFullYear();
 
 /* FETCH */
-// Declare a global empty array variable to store a list of hats
+// Declare a global empty array variable to store a list of sales
 var saleList = new Array();
-// Declare a global empty array variable to store a filtered list of hats
+// Declare a global empty array variable to store a filtered list of sales
 var filteredSales = new Array();
 
 // Output function
@@ -44,15 +44,15 @@ async function getSales(url) {
 
 getSales();
 
-// Step 7: Declare a function named reset that clears all of the <article> elements from the HTML element with an ID of hats
+// Step 7: Declare a function named reset that clears all of the <article> elements from the HTML element with an ID of sales
 function reset() {
   document.querySelector("#sales").innerHTML = "";
 }
 
 // Step 8: Declare a function named sortBy that does the following:
 // - Calls the reset function
-// - Sorts the global hat list by the currently selected value of the HTML element with an ID of sortBy
-// - Calls the output function passing in the sorted list of hats
+// - Sorts the global sale list by the currently selected value of the HTML element with an ID of sortBy
+// - Calls the output function passing in the sorted list of sale
 function sortBy() {
   reset();
   filterByPrice(false);
