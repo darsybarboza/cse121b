@@ -64,15 +64,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     display: block;
     padding: 10px;
     text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+
 }
-nav ul li a:hover {
-    background-color: #efefef;
-    color: black;
-}
+
 
 section {
     /* display: flex;
